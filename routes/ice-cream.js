@@ -14,7 +14,7 @@ router.get('/', (req, res, next) => {
 // READ ONE record for this table
 router.get('/:id', (req, res, next) => {
   knex('ice_cream')
-    .where('id',req.params.id)
+    .where('id', req.params.id)
     .then((rows) => {
       res.json(rows)
     })
@@ -25,7 +25,7 @@ router.get('/:id', (req, res, next) => {
 // READ ONE record for this table
 router.get('/:id', (req, res, next) => {
   knex('ice_cream')
-    .where('id',req.params.id)
+    .where('id', req.params.id)
     .then((rows) => {
       res.json(rows)
     })
